@@ -2,7 +2,7 @@
  Easy tool to retrieve the github users' full names of all contributors of a given github repo.
 
 ```
-github-contributors by OCH [v1.0] (2021/03/01)
+github-contributors by OCH [v1.1] (2021/03/01)
 
 usage: github-contributors [-h] L [L ...]
 
