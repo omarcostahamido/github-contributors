@@ -2,7 +2,7 @@ import requests
 import time
 import argparse
 
-print('github-contributors by OCH [v1.0] (2021/03/01)')
+print('github-contributors by OCH [v1.1] (2021/03/01)')
 print('')
 
 parser = argparse.ArgumentParser(description='Retrieve full names of contributors to github repo.')
@@ -19,4 +19,7 @@ for contributor in result:
 	name = contributor['login']
 	time.sleep(0.2)
 	y = requests.get('https://api.github.com/users/%s' % (name))
-	print(y.json()['name'])
+	if (y.json()['name'] == None):
+		print(y.json()['login'])
+	else:
+		print(y.json()['name'])
