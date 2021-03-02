@@ -14,3 +14,5 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
 ```
+
+run it from Python directly, or use the compiled executables provided in the [releases page](https://github.com/omarcostahamido/github-contributors/releases).
